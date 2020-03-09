@@ -1,0 +1,108 @@
+
+$bright-blue-color:#2DE1FC;
+$darkish-black-color:#071013;
+$mid-green-color:#09E85E;
+$pale-white-color:#FFFBFA;
+$mid-bluegreen-color:#00BD9D;
+
+img{
+    height:100%;
+    width:100%;
+}
+
+.container{ 
+        width:100%;
+        margin:0px!important;
+        padding:0px!important;
+        max-width:100%!important;
+}
+.row, .col{
+    margin:0px!important;
+    padding:0px!important;
+}
+
+.footer{
+    border-top:2px solid rgb(224, 224, 224);
+    background-color: $darkish-black-color;
+    height:150px;
+    i{
+        color:$bright-blue-color;
+        margin:5px;
+        margin-top:25px;
+    }
+}
+#socialMediaIcons{
+    width : 150px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.header{
+    border-bottom:2px solid rgb(224, 224, 224);
+    background-color: $darkish-black-color;
+}
+#bioContent{
+height:250px;
+background-image: url('./img/america-architecture-bay-boat-208745.jpg');
+background-position:center ;
+background-size: cover;
+
+}
+#bioTextContainer{
+    margin:60px;
+    padding:10px;
+    background-color: #071013a9;
+    color:white;
+    animation: 2s ease textEntrance;
+    border-radius: 5px;
+    
+}
+
+#skillContent{
+    height:150px;
+    background-color: $darkish-black-color;
+   
+    white-space: nowrap;
+    }
+
+.skillContainer{
+    height:140px;
+    margin:10px;
+    width:140px;
+    
+    display:inline-block;
+    
+}
+#skillContentContainer{
+
+    height:100%;
+    width:800px;
+    margin:0px auto;
+}
+
+
+
+
+
+
+
+
+
+/*Animations*/
+
+@keyframes textEntrance {
+    0% {
+        margin-top:0px;
+        padding:10px;
+        background-color: rgba(0, 189, 157, 0);
+        color:rgba(255, 255, 255, 0);
+    }
+    
+    
+    100% {
+        margin:60px;
+        padding:10px;
+        background-color: rgba(0, 189, 157, 0.685);
+        color:white;
+    }
+  }
