@@ -26,7 +26,7 @@ function App() {
     <Container>
       {/* Header Row */}
       <Row>
-        <div class = "header">
+        <div className = "header">
       <TopButton text = "HOME"></TopButton>
       <TopButton text = "ABOUT ME"></TopButton>
       </div>
@@ -61,9 +61,9 @@ function App() {
       {/* Projects*/}
       <Row>
         <Col id = "projectContent">
-        {images.map(({image, alt, link, divID})=>{
+        {images.map(({id, image, alt, link, divID, github})=>{
           
-          return(<ProjectTile image ={image} alt={alt} link={link} divID={divID}/>)
+          return(<ProjectTile key = {id} github = {github} image ={image} alt={alt} link={link} divID={divID}/>)
         })}
         
         </Col>
