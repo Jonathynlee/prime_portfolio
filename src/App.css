@@ -17,11 +17,10 @@ img {
   border-top: 2px solid #2DE1FC;
   background-color: #071013;
   height: 150px; }
-
-.footer i {
-  color: #2DE1FC;
-  margin: 5px;
-  margin-top: 25px; }
+  .footer i {
+    color: #2DE1FC;
+    margin: 5px;
+    margin-top: 25px; }
 
 #socialMediaIcons {
   width: 150px;
