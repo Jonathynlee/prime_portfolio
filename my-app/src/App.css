@@ -1,6 +1,7 @@
 img {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  transition: 1s; }
 
 .container {
   width: 100%;
@@ -13,7 +14,7 @@ img {
   padding: 0px !important; }
 
 .footer {
-  border-top: 2px solid #e0e0e0;
+  border-top: 2px solid #2DE1FC;
   background-color: #071013;
   height: 150px; }
 
@@ -28,8 +29,10 @@ img {
   margin-right: auto; }
 
 .header {
-  border-bottom: 2px solid #e0e0e0;
-  background-color: #071013; }
+  border-bottom: 4px solid #2DE1FC;
+  background-color: #071013;
+  height: 75px;
+  width: 100%; }
 
 #bioContent {
   height: 250px;
@@ -38,28 +41,30 @@ img {
   background-size: cover; }
 
 #bioTextContainer {
-  margin: 60px;
+  margin: 10px;
   padding: 10px;
   background-color: #071013a9;
   color: white;
   animation: 2s ease textEntrance;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 90%; }
 
 #skillContent {
-  height: 150px;
+  height: 175px;
   background-color: #071013;
+  border-top: 4px solid #2DE1FC;
+  border-bottom: 4px solid #2DE1FC;
   white-space: nowrap; }
-
-.skillContainer {
-  height: 140px;
-  margin: 10px;
-  width: 140px;
-  display: inline-block; }
 
 #skillContentContainer {
   height: 100%;
   width: 800px;
   margin: 0px auto; }
+
+#projectContent {
+  height: 500px;
+  display: inline-block;
+  white-space: nowrap; }
 
 /*Animations*/
 @keyframes textEntrance {

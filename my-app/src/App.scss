@@ -8,6 +8,7 @@ $mid-bluegreen-color:#00BD9D;
 img{
     height:100%;
     width:100%;
+    transition: 1s;
 }
 
 .container{ 
@@ -22,7 +23,7 @@ img{
 }
 
 .footer{
-    border-top:2px solid rgb(224, 224, 224);
+    border-top:2px solid $bright-blue-color;
     background-color: $darkish-black-color;
     height:150px;
     i{
@@ -38,8 +39,10 @@ img{
     
 }
 .header{
-    border-bottom:2px solid rgb(224, 224, 224);
+    border-bottom:4px solid $bright-blue-color;
     background-color: $darkish-black-color;
+    height:75px;
+    width:100%;
 }
 #bioContent{
 height:250px;
@@ -49,37 +52,36 @@ background-size: cover;
 
 }
 #bioTextContainer{
-    margin:60px;
+    margin:10px;
     padding:10px;
     background-color: #071013a9;
     color:white;
     animation: 2s ease textEntrance;
     border-radius: 5px;
+    height:90%
     
 }
 
 #skillContent{
-    height:150px;
+    height:175px;
     background-color: $darkish-black-color;
-   
+   border-top:4px solid $bright-blue-color;
+   border-bottom:4px solid $bright-blue-color;
     white-space: nowrap;
     }
 
-.skillContainer{
-    height:140px;
-    margin:10px;
-    width:140px;
-    
-    display:inline-block;
-    
-}
+
 #skillContentContainer{
 
     height:100%;
     width:800px;
     margin:0px auto;
 }
-
+#projectContent{
+    height:500px;
+    display: inline-block;
+    white-space: nowrap;
+    }
 
 
 

@@ -3,32 +3,34 @@ import React from 'react';
 //import Footer from "./components/Footer/footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './img/america-architecture-bay-boat-208745.jpg'
-import CSSImg from './img/css.png'
-import HTMLImg from './img/html.png'
-import JSImg from './img/javascript.png'
-import NODEImg from './img/node.png'
-import REACTImg from './img/react.png'
+import CSSImg from './img/css.png';
+import HTMLImg from './img/html.png';
+import JSImg from './img/javascript.png';
+import NODEImg from './img/node.png';
+import REACTImg from './img/react.png';
+import images from"./projectData";
+import WORKOUTTracker from './img/workoutTracker.png';
+import projectArr from './projectData.js'
 import './App.scss';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import SkillTile from "./components/SkillTile/skillTile";
+import ProjectTile from "./components/ProjectTile/projectTile";
+import TopButton from "./components/TopButton/topButton";
+
+
 function App() {
+  console.log(projectArr)
   return (
 
     
     <Container>
       {/* Header Row */}
       <Row>
-        <Col className = "header">
-          
-          <Row>
-      <Col sm={12}>
-      <Button bsstyle="primary">Home</Button>
-      <Button bsstyle="primary">About Me</Button>
-      </Col>
-      
+        <div class = "header">
+      <TopButton text = "HOME"></TopButton>
+      <TopButton text = "ABOUT ME"></TopButton>
+      </div>
       </Row>
-        </Col>
-      </Row>
-
 
     {/* Main Content*/}
       <Row>
@@ -38,27 +40,32 @@ function App() {
           </div>
         </Col>
       </Row>
-      
+      {/* Skill Tiles*/}
       <Row>
         <Col id = "skillContent">
           <div id = "skillContentContainer">
-          <div className = "skillContainer" id="skillHTMLContainer">
-          <img src={HTMLImg} alt="HTML LOGO"></img>
+          <SkillTile image={HTMLImg} skillID = "skillHTMLContainer" alt = "HTML LOGO"/>
+          <SkillTile skillID ="skillJSContainer" image={JSImg} alt="JS LOGO"/>
+          
+          <SkillTile className = "skillContainer" skillID="skillCSSContainer" image ={CSSImg} alt="CSS LOGO"/>
+          
+          <SkillTile className = "skillContainer" skillID="skillNodeContainer" image ={NODEImg} alt="NODE LOGO"/>
+          
+          <SkillTile className = "skillContainer" skillID="skillReactContainer" image ={REACTImg} alt="REACT LOGO"/>
           
           </div>
-          <div className = "skillContainer" id="skillJSContainer">
-          <img src={JSImg} alt="JS LOGO"></img>
-          </div>
-          <div className = "skillContainer" id="skillCSSContainer">
-          <img src={CSSImg} alt="CSS LOGO"></img>
-          </div>
-          <div className = "skillContainer" id="skillNodeContainer">
-          <img src={NODEImg} alt="NODE LOGO"></img>
-          </div>
-          <div className = "skillContainer" id="skillReactContainer">
-          <img src={REACTImg} alt="REACT LOGO"></img>
-          </div>
-          </div>
+        </Col>
+      </Row>
+
+
+      {/* Projects*/}
+      <Row>
+        <Col id = "projectContent">
+        {images.map(({image, alt, link, divID})=>{
+          
+          return(<ProjectTile image ={image} alt={alt} link={link} divID={divID}/>)
+        })}
+        
         </Col>
       </Row>
 
