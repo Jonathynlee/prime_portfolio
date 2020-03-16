@@ -8,12 +8,11 @@
   color: #3d3d3d;
   text-shadow: none;
   animation: 3s lighting infinite; }
-
-.topButton:hover {
-  cursor: crosshair;
-  animation: 1.5s hover-lighting;
-  color: #24aabe;
-  text-shadow: 0 0 10px #a7a7a7, 0 0 20px #a7a7a7, 0 0 30px #2DE1FC, 0 0 40px #2DE1FC, 0 0 50px #2DE1FC, 0 0 60px #2DE1FC, 0 0 70px #2DE1FC; }
+  .topButton:hover {
+    cursor: crosshair;
+    animation: 1.5s hover-lighting;
+    color: #24aabe;
+    text-shadow: 0 0 10px #a7a7a7, 0 0 20px #a7a7a7, 0 0 30px #2DE1FC, 0 0 40px #2DE1FC, 0 0 50px #2DE1FC, 0 0 60px #2DE1FC, 0 0 70px #2DE1FC; }
 
 @keyframes lighting {
   0% {

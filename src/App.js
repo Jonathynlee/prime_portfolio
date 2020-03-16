@@ -103,10 +103,10 @@ function App() {
           <Row className ="footer">
       <Col sm={12}>
         <div id = "socialMediaIcons">
-      <i className="fab fa-2x fa-github"></i>
-      <i className="fab fa-2x fa-linkedin"></i>
-      <i className="fab fa-2x fa-facebook-f"></i>
-      <i className="fab fa-2x fa-instagram"></i>
+      <a href="https://github.com/Jonathynlee"><i className="fab fa-2x fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jonathyn-major-84445a7b/"><i className="fab fa-2x fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/Uphoricness"><i className="fab fa-2x fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/jonathynleemajor/"><i className="fab fa-2x fa-instagram"></i></a>
       </div>
       
       </Col>
