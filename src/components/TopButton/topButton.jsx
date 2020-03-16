@@ -7,7 +7,7 @@ export default class TopButton extends Component{
 
         return(
             <div className = "topButton">
-                <h1>{this.props.text}</h1>
+               <h1>{this.props.text}</h1>
                 
             </div>
 

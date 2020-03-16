@@ -46,11 +46,16 @@ img{
 }
 #bioContent{
 height:250px;
-background-image: url('./img/america-architecture-bay-boat-208745.jpg');
 background-position:center ;
 background-size: cover;
 
 }
+.bioContent-left{
+    height:250px;
+    width:200px;
+    margin: 0px auto;
+}
+@media all and (min-width:768px ){
 #bioTextContainer{
     margin:10px;
     padding:10px;
@@ -58,8 +63,31 @@ background-size: cover;
     color:white;
     animation: 2s ease textEntrance;
     border-radius: 5px;
-    height:90%
+    height:90%;
+    width:100%;
+    margin-left:0%;
+    transition: .5s;
     
+}
+#bioTextContainer:hover{
+    width:400%;
+    margin-left:-300%;
+    transition: .5s;
+}
+}
+@media all and (max-width:768px ){
+    #bioTextContainer{
+        padding:10px;
+    background-color: #071013a9;
+    border-radius: 5px;
+    color:white;
+        width:90%;
+        height:90%;
+        margin:0% auto;
+        p{
+            overflow:hidden;
+        }
+    }
 }
 
 #skillContent{
@@ -68,8 +96,13 @@ background-size: cover;
    border-top:4px solid $bright-blue-color;
    border-bottom:4px solid $bright-blue-color;
     white-space: nowrap;
+    overflow-x: hidden; 
+                overflow-x: auto; 
     }
-
+    #bioTextContainer-left{
+        white-space: nowrap;
+        max-height:250%;
+    }
 
 #skillContentContainer{
 
@@ -81,6 +114,8 @@ background-size: cover;
     height:500px;
     display: inline-block;
     white-space: nowrap;
+    overflow-x: hidden; 
+                overflow-x: auto; 
     }
 
 
@@ -96,15 +131,15 @@ background-size: cover;
     0% {
         margin-top:0px;
         padding:10px;
-        background-color: rgba(0, 189, 157, 0);
+        background-color: #07101300;
         color:rgba(255, 255, 255, 0);
     }
     
     
     100% {
-        margin:60px;
+        margin:10px;
         padding:10px;
-        background-color: rgba(0, 189, 157, 0.685);
+        background-color: #071013a9;
         color:white;
     }
   }

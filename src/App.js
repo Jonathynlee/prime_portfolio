@@ -8,15 +8,18 @@ import HTMLImg from './img/html.png';
 import JSImg from './img/javascript.png';
 import NODEImg from './img/node.png';
 import REACTImg from './img/react.png';
+import profileImg from './img/jm_picture.jpg'
+import hikingImg from './img/jm_hiking.jpg'
+import snowBoardImg from './img/jm_snowboard.png'
+
 import images from"./projectData";
-import WORKOUTTracker from './img/workoutTracker.png';
 import projectArr from './projectData.js'
 import './App.scss';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import SkillTile from "./components/SkillTile/skillTile";
 import ProjectTile from "./components/ProjectTile/projectTile";
 import TopButton from "./components/TopButton/topButton";
-
+import TileImage from "./components/TileImage/tileImage"
 
 function App() {
   console.log(projectArr)
@@ -34,9 +37,31 @@ function App() {
 
     {/* Main Content*/}
       <Row>
-        <Col id = "bioContent">
+
+      
+      <Col md="3" class = "bioContent-left">
+          <div class="bioTextContainer-left">
+            <TileImage image = {profileImg}></TileImage>
+            </div>
+            </Col>
+            <Col md="3" class = "bioContent-left">
+          <div class="bioTextContainer-left">
+            <TileImage image = {hikingImg}></TileImage>
+            </div>
+            </Col>
+            <Col md="3" class = "bioContent-left">
+              
+          <div class="bioTextContainer-left">
+            <TileImage image = {snowBoardImg}></TileImage>
+            
+          </div>
+        </Col>
+        <Col md="3" id = "bioContent">
           <div id="bioTextContainer">
-            <p>Hello, My Name is Jonathyn and I am originally from the Bay Area.</p>
+          <p>Hello, My Name is Jonathyn and I graduated with my BS in Mechanical Engineering in May, 2017. There is much to my story but I will leave that for the 'About Me' tab. <br>
+          </br><br></br>
+          I recently began to love programming and I am now soon to be certified as a full stack developer for Web Development.</p>
+          
           </div>
         </Col>
       </Row>

@@ -1,7 +1,90 @@
+
+$bright-blue-color:#2DE1FC;
+$darkish-black-color:#071013;
+$mid-green-color:#09E85E;
+$pale-white-color:#FFFBFA;
+$mid-bluegreen-color:#00BD9D;
+$glow-color:#2DE1FC;
+$glow-color-text:rgb(36, 170, 190);
+$glow-color-accent:rgb(167, 167, 167);
 .topButton{
     height:75px;
     width:50%;
     float:left;
     text-align: center;
+    padding-top:30px;
+    transition:.05s;
+    color:rgb(61, 61, 61);
+    text-shadow: none;
+    animation:3s lighting infinite;
+    &:hover{
+        cursor: crosshair;
+        animation:1.5s hover-lighting ;
 
+
+        color:$glow-color-text;
+    text-shadow: 0 0 10px $glow-color-accent, 0 0 20px $glow-color-accent, 0 0 30px $glow-color, 0 0 40px $glow-color, 0 0 50px $glow-color, 0 0 60px $glow-color, 0 0 70px $glow-color;
+    }
+}
+
+@keyframes lighting{
+
+    0%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;}
+    10%{
+        color:$glow-color-text;
+    text-shadow: 0 0 10px $glow-color-accent, 0 0 20px $glow-color-accent, 0 0 30px $glow-color, 0 0 40px $glow-color, 0 0 50px $glow-color, 0 0 60px $glow-color, 0 0 70px $glow-color;
+    }
+    12%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;}
+
+        60%{
+            color:rgb(61, 61, 61);
+            text-shadow: none;}
+    70%{
+        color:$glow-color-text;
+        text-shadow: 0 0 10px $glow-color-accent, 0 0 20px $glow-color-accent, 0 0 30px $glow-color, 0 0 40px $glow-color, 0 0 50px $glow-color, 0 0 60px $glow-color, 0 0 70px $glow-color;
+    }
+    74%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;
+    }
+    78%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;
+    }
+    80%{
+        color:$glow-color-text;
+        text-shadow: 0 0 10px $glow-color-accent, 0 0 20px $glow-color-accent, 0 0 30px $glow-color, 0 0 40px $glow-color, 0 0 50px $glow-color, 0 0 60px $glow-color, 0 0 70px $glow-color;
+    }
+    84%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;
+    }
+    90%{
+
+    }
+    
+    100%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;
+    }
+    
+    
+}
+
+@keyframes hover-lighting{
+
+    0%{
+        color:rgb(61, 61, 61);
+        text-shadow: none;}
+    100%{
+        color:$glow-color-text;
+    text-shadow: 0 0 10px $glow-color-accent, 0 0 20px $glow-color-accent, 0 0 30px $glow-color, 0 0 40px $glow-color, 0 0 50px $glow-color, 0 0 60px $glow-color, 0 0 70px $glow-color;
+    }
+    
+    
+    
 }

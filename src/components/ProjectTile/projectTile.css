@@ -14,12 +14,14 @@
   border: 2px solid black;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
-  width: 20%; }
-  .linkButton:hover {
-    background-color: #00879c;
-    color: white;
-    border-color: white;
-    transition: .25s; }
+  width: 20%;
+  min-width: 110px; }
+
+.linkButton:hover {
+  background-color: #00879c;
+  color: white;
+  border-color: white;
+  transition: .25s; }
 
 .liveButton {
   top: 33%; }
@@ -36,16 +38,24 @@
   border-right: 3px solid #071013;
   text-align: center;
   transition: .5s; }
-  .projectImageTile img {
-    width: auto;
-    margin-left: -50%; }
-  .projectImageTile:hover {
-    width: 28.6%; }
-    .projectImageTile:hover > .overlay {
-      display: block;
-      transition: .5s; }
-    .projectImageTile:hover img {
-      margin-left: -25%; }
+
+.projectImageTile img {
+  width: auto;
+  margin-left: -50%; }
+
+.projectImageTile:hover {
+  width: 28.6%; }
+
+.projectImageTile:hover > .overlay {
+  display: block;
+  transition: .5s; }
+
+.projectImageTile:hover img {
+  margin-left: -25%; }
 
 #empty {
   background-color: #071013; }
+
+#empty:hover > .overlay {
+  display: none;
+  transition: .5s; }
