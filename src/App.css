@@ -17,10 +17,11 @@ img {
   border-top: 2px solid #2DE1FC;
   background-color: #071013;
   height: 150px; }
-  .footer i {
-    color: #2DE1FC;
-    margin: 5px;
-    margin-top: 25px; }
+
+.footer i {
+  color: #2DE1FC;
+  margin: 5px;
+  margin-top: 25px; }
 
 #socialMediaIcons {
   width: 150px;
@@ -69,8 +70,8 @@ img {
     width: 90%;
     height: 90%;
     margin: 0% auto; }
-    #bioTextContainer p {
-      overflow: hidden; } }
+  #bioTextContainer p {
+    overflow: hidden; } }
 
 #skillContent {
   height: 175px;
@@ -94,8 +95,7 @@ img {
   height: 500px;
   display: inline-block;
   white-space: nowrap;
-  overflow-x: hidden;
-  overflow-x: auto; }
+  overflow: hidden; }
 
 /*Animations*/
 @keyframes textEntrance {
